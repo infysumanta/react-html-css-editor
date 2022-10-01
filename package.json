@@ -1,8 +1,10 @@
 {
-  "name": " react-html-css-editor",
+  "homepage": "http://infysumanta.github.io/react-html-css-editor",
+  "name": "react-html-css-editor",
   "version": "0.1.0",
   "dependencies": {
     "codemirror": "^5.61.0",
+    "gh-pages": "^3.1.0",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
     "react-codemirror2": "^7.2.1",
@@ -10,6 +12,8 @@
     "react-scripts": "4.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
